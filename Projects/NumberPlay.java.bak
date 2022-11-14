@@ -1,0 +1,64 @@
+/**************************************************************************** 
+ * NumberPlay
+ **************************************************************************** 
+ * Check if the number is divisible by 11 
+ * Shashank Sinha 
+ * Feb. 03, 2022
+ * Course Number: 42984 and Section: C90 
+ ****************************************************************************/ 
+
+
+
+import java.util.Scanner;
+
+public class NumberPlay {
+    public static void main(String[] args){
+		
+        Scanner input = new Scanner(System.in);
+		int number, sum = 0;
+
+        System.out.println("Would you like to randomly enter a number (1) or enter it yourself (2).");
+        int choice = input.nextInt();
+
+        if(choice == 1){
+			
+            number = (int)(Math.random()*(1000000) + 1);
+            System.out.println(number);
+			
+        } 
+		
+		else if(choice == 2) {
+			
+            System.out.println("Enter a 6-digit number.");
+            number = input.nextInt();
+            if(number > 999999 || number < 99999)
+				
+            {
+                System.out.println("Incorrect input");
+                return;
+            }
+        } 
+		else {
+			
+            System.out.println("Incorrect input");
+            return;
+        }
+		
+		int temp = number;
+
+		while (number != 0) {	
+			sum += number % 10;
+			number = number / 10;
+		}
+			
+		if (sum % 11 == 0) {
+			
+            System.out.println(temp + " is divisible by 11");
+            return;
+        } 
+		else if (sum % 11 != 0) {
+            System.out.println(temp + " is not divisible by 11");
+            return;
+        }       
+    }
+}
