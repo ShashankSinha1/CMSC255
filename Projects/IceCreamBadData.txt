@@ -1,0 +1,8 @@
+Vanilla	0.78	137.6	1.98
+Chocolate Mint	0.62	14p.5	2.14
+Chocolate Chip	0.59	151.3	2.23
+Cookies N' Cream	-0.33	162.8	2.17
+Strawberry	0.45	12g.6	2.09
+Cookie Dough	0.67	168.4	2.12
+Salted Caramel	0.72	139.1	2.O7
+Moose Tracks	0.r9	158.2	2.34
